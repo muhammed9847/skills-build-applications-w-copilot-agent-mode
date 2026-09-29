@@ -52,7 +52,7 @@ async function seedDatabase() {
       );
       if (!team) throw new Error(`Unable to seed team ${teamSeed.name}`);
       teamIds.set(teamSeed.name, team._id);
-    }
+    } 
 
     const activitySeeds = [
       { username: 'avery-chen', activityType: 'running', durationMinutes: 38, distanceKm: 6.2, performedAt: new Date('2026-09-25T06:45:00.000Z') },
