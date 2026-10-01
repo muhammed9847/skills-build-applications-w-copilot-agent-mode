@@ -1,3 +1,28 @@
+# OctoFit Tracker frontend
+
+The React interface runs on port 5173 and reads collection data from the API on port 8000.
+
+## Codespaces configuration
+
+Set `VITE_CODESPACE_NAME` to the Codespace name in `octofit-tracker/frontend/.env.local`:
+
+```env
+VITE_CODESPACE_NAME=your-codespace-name
+```
+
+Restart Vite after changing the environment file. When the variable is unset, local requests use `/api` and the Vite development proxy forwards them to `http://127.0.0.1:8000`.
+
+## Development and checks
+
+Run commands from the workspace root:
+
+```bash
+npm install --prefix octofit-tracker/frontend
+npm run --prefix octofit-tracker/frontend dev
+npm run --prefix octofit-tracker/frontend test
+npm run --prefix octofit-tracker/frontend lint
+npm run --prefix octofit-tracker/frontend build
+```
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.

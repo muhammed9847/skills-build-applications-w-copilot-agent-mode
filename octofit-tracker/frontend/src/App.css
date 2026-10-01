@@ -245,7 +245,7 @@
   border-bottom: 1px solid var(--line);
 }
 
-.data-tabs button {
+.data-tabs a {
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -257,21 +257,22 @@
   color: #68746c;
   font: inherit;
   font-size: 12px;
+  text-decoration: none;
   white-space: nowrap;
   cursor: pointer;
 }
 
-.data-tabs button:hover,
-.data-tabs button.active {
+.data-tabs a:hover,
+.data-tabs a.active {
   color: var(--green-dark);
 }
 
-.data-tabs button.active {
+.data-tabs a.active {
   border-bottom-color: var(--green);
   font-weight: 700;
 }
 
-.data-tabs button span {
+.data-tabs a span {
   min-width: 20px;
   padding: 2px 5px;
   border-radius: 10px;
